@@ -11,23 +11,28 @@
 nav {
     display: flex;
     height: 130px;
+    align-items: center;
     z-index: 0;
-    /* backdrop-filter: blur(5px); */
-    background-color: rgba(230, 228, 228, 0.5);
+    column-gap: 2%;
+    background-color: rgba(202, 202, 202, 0.5);
     box-sizing: border-box;
 }
 
-nav .modal-content {
-    height: 200px;
+.navbar {
+    display: inline;
+}
+
+nav .container .modal-dialog .modal-content {
     box-shadow: 0px 0px 50px white;
     border: 2px solid black;
+    min-height: 300px;
 }
 
 .modal-body {
     text-align: center;
 }
 
-nav .container .know-status {
+nav .know-status {
     box-shadow: none;
     font-family: monospace;
     background-color: transparent;
@@ -37,15 +42,22 @@ nav .container .know-status {
     border: none;
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 
-nav .container .know-status:hover {
+
+/* 
+.nav-bar.nav {
+    z-index: 50;
+} */
+
+nav .know-status:hover {
     letter-spacing: 1px;
     background-color: black;
 }
 
 nav .container {
-    width: 37%;
+    width: 20%;
     margin: 0;
     align-items: center;
     padding: 3%;
@@ -73,4 +85,14 @@ nav .user-img img {
 
 .modal-title {
     margin-left: 25%;
+}
+
+nav>.nav-item {
+    text-align: right;
+    padding-right: 5%;
+    align-self: center;
+}
+
+nav .nav-item a {
+    text-decoration: none;
 }
