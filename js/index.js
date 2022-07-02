@@ -17,5 +17,5 @@ function time2() {
     printLetterByLetter("user-name", "Mohammed Hasan", 150);
 }
 printLetterByLetter("welcome", "Hello World...!!", 150);
-setTimeout(time, 3000);
-setTimeout(time2, 4000);
+setTimeout(time, 5000);
+setTimeout(time2, 7000);
