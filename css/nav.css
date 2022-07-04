@@ -1,4 +1,4 @@
-.bg-image img {
+.bg-image {
     z-index: -10;
     position: fixed;
     top: 0;
@@ -6,16 +6,23 @@
     width: 100%;
     height: 100%;
     filter: brightness(70%);
+    background-image: linear-gradient(130deg, rgb(37, 37, 188) 60%, white 30%);
+}
+
+body {
+    margin-top: 13%;
 }
 
 nav {
     display: flex;
-    height: 130px;
+    height: 100px;
     align-items: center;
-    z-index: 0;
-    column-gap: 2%;
-    background-color: rgba(202, 202, 202, 0.5);
+    background-color: rgba(189, 189, 189, 0.863);
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
 }
 
 .navbar {
@@ -30,6 +37,7 @@ nav .container .modal-dialog .modal-content {
 
 .modal-body {
     text-align: center;
+    font-family: roboto;
 }
 
 nav .know-status {
@@ -40,7 +48,7 @@ nav .know-status {
     padding: 5px;
     transition: all 0.3s ease-in-out;
     border: none;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
     color: white;
 }
@@ -65,7 +73,7 @@ nav .container {
 
 nav .user-img {
     width: 20%;
-    height: 90%;
+    height: 100%;
     text-align: center;
 }
 
@@ -83,16 +91,98 @@ nav .user-img img {
     margin-left: 5%;
 }
 
+.modal .modal-header .modal-title {
+    font-size: 24px;
+    font-family: roboto;
+    font-weight: bolder;
+}
+
 .modal-title {
     margin-left: 25%;
 }
 
 nav>.nav-item {
     text-align: right;
-    padding-right: 5%;
+    padding-right: 4%;
     align-self: center;
 }
 
 nav .nav-item a {
     text-decoration: none;
+}
+
+.dropdown-menu.show {
+    text-align: center;
+}
+
+.modal-body .content {
+    display: flex;
+}
+
+.modal-body .content .logo {
+    width: 35%;
+}
+
+.modal-body .footer {
+    margin-top: 5%;
+}
+
+.modal-body .info-detail a {
+    text-decoration: none;
+}
+
+.content .logo .job-description {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.content .my-info {
+    font-size: 14px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.content .my-info>.info {
+    margin: 0;
+    width: 100%;
+}
+
+.content .my-info p {
+    margin: 0;
+}
+
+.content .my-info .info-head {
+    position: relative;
+}
+
+.content .my-info .info-head img {
+    margin: 0% 4%;
+}
+
+.my-info .info-head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 2px;
+    height: 200%;
+    background-color: blue;
+    display: inline-block;
+}
+
+.my-info .info-head::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -130%;
+    width: 300px;
+    height: 2%;
+    background-color: grey;
+    display: inline-block;
+}
+
+.my-info .info-head~.info-detail {
+    text-indent: 20%;
 }

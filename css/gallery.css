@@ -20,7 +20,7 @@ h2 {
     width: 90%;
     margin: 3% 5%;
     display: grid;
-    grid-template-columns: repeat(3, 30%);
+    grid-template-columns: repeat(3, 33%);
     align-items: center;
     padding: 0;
     z-index: 1;
@@ -52,11 +52,12 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     inset: 0% auto auto auto;
-    margin-top: -20%;
+    margin-top: -40%;
     opacity: 0;
     transition: 0.3s all;
     cursor: pointer;
     justify-content: center;
+    font-family: roboto;
 }
 
 .post-container:hover>.img-description {

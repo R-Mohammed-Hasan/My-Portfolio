@@ -22,11 +22,12 @@ body .website {
 
 a {
     text-decoration: none;
+    transition: all 0.3s;
     color: white;
 }
 
 .website-description a:hover {
-    color: rgb(0, 255, 204);
+    color: rgb(13, 181, 232);
 }
 
 .website .website-description {
@@ -43,7 +44,6 @@ a {
     font-weight: lighter;
     opacity: 0;
     transition: all 0.3s;
-    z-index: 0;
 }
 
 .website:hover .website-description {

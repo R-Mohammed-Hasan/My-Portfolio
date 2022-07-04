@@ -1,0 +1,69 @@
+h2 {
+    color: white;
+    text-align: center;
+    margin: 3%;
+}
+
+.all-certificates {
+    width: 100%;
+    padding: 2% 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.all-certificates .certificate {
+    width: 100%;
+    height: 300px;
+    animation: glow 3s 3s 4;
+    position: relative;
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0px 0px 15px rgb(244, 248, 143);
+    }
+}
+
+.all-certificates img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.languages-container {
+    color: white;
+    font-family: roboto;
+    background-color: rgba(196, 196, 196, 0.603);
+    font-weight: bolder;
+    margin: 2% 5% 3% 5%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.languages-container h3 {
+    text-align: center;
+    margin: 2%;
+}
+
+.languages-container p {
+    text-indent: 20%;
+}
+
+.border {
+    border-radius: 50%;
+}
+
+.languages-container div {
+    text-align: center;
+}
+
+.languages-container div img {
+    margin: 2%;
+    cursor: pointer;
+}
