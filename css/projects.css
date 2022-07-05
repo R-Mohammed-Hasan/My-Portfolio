@@ -20,7 +20,7 @@ body .website {
     position: relative;
 }
 
-a {
+.all-websites a {
     text-decoration: none;
     transition: all 0.3s;
     color: white;
