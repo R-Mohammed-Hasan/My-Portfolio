@@ -24,8 +24,8 @@ html {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 71%;
-    left: 65%;
+    top: 51%;
+    left: 50%;
     border-radius: 10px;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -33,6 +33,7 @@ html {
     padding: 20px;
     text-align: center;
     backdrop-filter: blur(5px);
+    visibility: hidden;
 }
 
 
@@ -44,16 +45,40 @@ html {
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-image: linear-gradient(120deg, blue 70%, white 30%);
 }
 
 .user-name {
-    box-shadow: inset 0 0 0 0 #54b3d6;
+    box-shadow: inset 0px 0px 0px 0px #54b3d6;
     color: #54b3d6;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .user-name:hover {
     text-decoration: none;
-    box-shadow: inset 500px 0 0 0 #54b3d6;
+    box-shadow: inset 500px 0px 0px 0px #54b3d6;
     color: white;
+}
+
+.my-img {
+    position: absolute;
+    top: 16%;
+    left: 25%;
+    width: 45%;
+    height: 85%;
+    margin: 0;
+    border-radius: 100%;
+    background: url('./../images/hasan.jpg') no-repeat;
+    background-size: 100% 100%;
+    transition: 1.4s all;
+    cursor: pointer;
+}
+
+.my-img:hover {
+    content: url('./../images/hasan2.jpg');
+}
+
+#nav-my-img {
+    opacity: 0;
+    transition: 1.4s all;
 }

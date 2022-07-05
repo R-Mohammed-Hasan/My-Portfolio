@@ -27,7 +27,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
+                                    <img id="nav-my-img" src="./images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
@@ -124,18 +124,23 @@
     <div class="load">
         <img width="100%" src="./../images/loading.gif" alt="">
     </div>
-    <div class="bg-text">
+    <div class="bg-text" id="content">
         <h2 id="welcome"></h2>
         <h1 style="font-size:45px;display: inline;" id="intro">
         </h1>
-        <h1 style="font-size:45px;display: inline;">
-            <a href="./pages/about.html" class="user-name" id="user-name"> </a>
+
+        <h1 style="font-size:45px;display: inline; ">
+            <a href="./pages/about.html " class="user-name " id="user-name"> </a>
+        </h1>
+        <h1 id="info">
         </h1>
         <p id="philosophy"> </p>
     </div>
+    <img class="bg-img " src="./images/full-stack-development.gif " alt=" ">
 
-    <img class="bg-img" src="./images/full-stack-development.gif" alt="">
-    <script src="./js/index.js">
+
+    <div class="my-img" title="Click on me..." onclick="onRefresh()" id="my-img"></div>
+    <script src="./js/index.js ">
     </script>
 </body>
 
