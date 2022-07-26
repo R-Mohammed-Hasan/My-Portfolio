@@ -88,8 +88,9 @@ h2 {
     }
     #view-more {
         margin: 2% 36%;
+        font-size: 14px;
     }
     body h2 {
-        margin-top: 25%;
+        margin-top: 30%;
     }
 }
