@@ -13,7 +13,6 @@ body {
 h2 {
     color: white;
     text-align: center;
-    margin-top: 24%;
 }
 
 .all-content {
@@ -60,11 +59,16 @@ h2 {
     font-family: roboto;
 }
 
-.img-description p {
-    font-size: 8px;
-}
-
 .post-container:hover>.img-description {
     opacity: 1;
     margin-top: 0%;
+}
+
+@media (max-width: 700px) {
+    body h2 {
+        margin-top: 24%;
+    }
+    .img-description p {
+        font-size: 8px;
+    }
 }
