@@ -62,10 +62,10 @@ html {
 
 .my-img {
     position: absolute;
-    top: 16%;
-    left: 25%;
-    width: 45%;
-    height: 85%;
+    top: 20%;
+    left: 15%;
+    width: 35%;
+    height: 70%;
     margin: 0;
     border-radius: 100%;
     background: url('./../images/hasan.jpg') no-repeat;
@@ -78,7 +78,38 @@ html {
     content: url('./../images/hasan2.jpg');
 }
 
-#nav-my-img {
-    opacity: 0;
-    transition: 1.4s all;
+.my-motto {
+    position: absolute;
+    inset: 45% 7% auto auto;
+    color: white;
+    background-color: rgba(134, 134, 134, 0.856);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1040px) {
+    .my-img {
+        width: 30%;
+        height: 50%;
+        top: 26%;
+    }
+    .my-motto {
+        inset: 45% 7% auto auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .my-motto {
+        font-size: 35px;
+        inset: 54% 20% auto auto;
+    }
+    .my-img {
+        width: 33%;
+        height: 30%;
+        top: 20%;
+        left: 38%;
+    }
 }

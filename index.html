@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/mdp0gec.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../css/loading.css">
     <link rel="stylesheet" href="./css/nav.css">
     <script src="../js/loading.js"></script>
@@ -18,40 +21,62 @@
 <body>
     <nav>
         <div class="user-img">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img id="nav-my-img" src="./images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img id="nav-my-img" src="./images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
-                                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
-                                    </li>
-                                </ul>
-                            </li>
 
-                        </ul>
+                        <div class="nav-item">
+                            <a href="./pages/gallery.html" class="know-status">
+                                Gallery
+                            </a>
+                        </div>
 
+                        <div class="nav-item">
+                            <a href="./pages/about.html" class="know-status">
+                                About Me
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./pages/projects.html" class="know-status">
+                                See my Projects..!
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./pages/skillSet.html" class="know-status">
+                                Skill set
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="container">
+        <div class="container nav-item">
             <!-- Button trigger modal -->
             <button type="button" class="know-status" data-bs-toggle="modal" data-bs-target="#exampleModal">
-             Visiting Card
-            </button>
+                Visiting Card
+               </button>
 
             <!-- Modal -->
             <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -105,6 +130,24 @@
                 Gallery
             </a>
         </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 my-photo-logo">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img id="nav-my-img" src="./images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
+                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
         <div class="nav-item">
             <a href="./pages/about.html" class="know-status">
                 About Me
@@ -126,10 +169,10 @@
     </div>
     <div class="bg-text" id="content">
         <h2 id="welcome"></h2>
-        <h1 style="font-size:45px;display: inline;" id="intro">
+        <h1 style="display: inline;" id="intro">
         </h1>
 
-        <h1 style="font-size:45px;display: inline; ">
+        <h1 style="display: inline; ">
             <a href="./pages/about.html " class="user-name " id="user-name"> </a>
         </h1>
         <h1 id="info">
@@ -140,6 +183,7 @@
 
 
     <div class="my-img" title="Click on me..." onclick="onRefresh()" id="my-img"></div>
+    <h1 class="my-motto" id="motto">Dwelling to do well</h1>
     <script src="./js/index.js ">
     </script>
 </body>

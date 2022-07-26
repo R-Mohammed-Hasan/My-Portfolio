@@ -41,6 +41,8 @@ function onRefresh() {
     document.getElementById("my-img").style.cssText =
         "top:5%;left:5%;width:5%;height:5%;opacity:0;";
     document.getElementById("nav-my-img").style.opacity = "1";
+    document.getElementById("motto").style.display = "none";
+
     setTimeout(time, 4000);
     setTimeout(time1, 10000);
     setTimeout(time2, 12000);

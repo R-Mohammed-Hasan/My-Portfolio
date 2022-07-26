@@ -21,40 +21,62 @@
 <body>
     <nav>
         <div class="user-img">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img id="nav-my-img" src="./../images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./../images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
-                                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
-                                    </li>
-                                </ul>
-                            </li>
 
-                        </ul>
+                        <div class="nav-item">
+                            <a href="./../pages/gallery.html" class="know-status">
+                                Gallery
+                            </a>
+                        </div>
 
+                        <div class="nav-item">
+                            <a href="./../pages/about.html" class="know-status">
+                                About Me
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./../pages/projects.html" class="know-status">
+                                See my Projects..!
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./../pages/skillSet.html" class="know-status">
+                                Skill set
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="container">
+        <div class="container nav-item">
             <!-- Button trigger modal -->
             <button type="button" class="know-status" data-bs-toggle="modal" data-bs-target="#exampleModal">
-             Visiting Card
-            </button>
+                Visiting Card
+               </button>
 
             <!-- Modal -->
             <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -104,22 +126,40 @@
         </div>
 
         <div class="nav-item">
-            <a href="./gallery.html" class="know-status">
+            <a href="./pages/gallery.html" class="know-status">
                 Gallery
             </a>
         </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 my-photo-logo">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img id="nav-my-img" src="./../images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
+                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
         <div class="nav-item">
-            <a href="./about.html" class="know-status">
+            <a href="./pages/about.html" class="know-status">
                 About Me
             </a>
         </div>
         <div class="nav-item">
-            <a href="./projects.html" class="know-status">
+            <a href="./pages/projects.html" class="know-status">
                 See my Projects..!
             </a>
         </div>
         <div class="nav-item">
-            <a href="./skillSet.html" class="know-status">
+            <a href="./pages/skillSet.html" class="know-status">
                 Skill set
             </a>
         </div>
@@ -128,7 +168,7 @@
         <img width="100%" src="./../images/loading.gif" alt="">
     </div>
     <div class="bg-image">
-        <img src="./../images/bg.gif" alt="" width="100%">
+        <img src="./../images/bg.gif" alt="" width="100%" height="100%">
     </div>
 
 
@@ -136,22 +176,38 @@
         <h2 class="about">About me</h2>
         <div class="about-lines first">
             <p>
-                I am Mohammed Hasan. I studied at Nellai Nadar Matric. School at Chennai. I then decided to study at FWSA and was
+                I am Mohammed Hasan and I am from Chennai. After completing my 12th standard, I decided to study at Freshworks Software
             </p>
         </div>
         <div class="about-lines">
             <p>
-                selected through an Interview. I have a sweet family at home as well as at Freshworks. I am a big fan of Bruce Lee, Tiger Shroff
+                Academy and got selected through an entrance test and interview. I have a sweet family at home too. Generally speaking, I am friendly
             </p>
         </div>
         <div class="about-lines">
             <p>
-                and Jackie Chan. I love Martial Arts and if had chance I would go to Shaolin and learn Martial Arts. I love Action movies and love Baaghi movie
+                and like to help people. However, I mostly prefer to focus on my work and take responsibility wherever required. One of the main reasons
             </p>
         </div>
         <div class="about-lines">
             <p>
-                the most. In accordance to Action movies, it is the best I have ever scene.
+                I got into software development is because I love to learn new technologies and because I am interested in action based games.
+            </p>
+        </div>
+        <div class="about-lines">
+            <p>
+                My life goal is to design an action role playing game of my own. Apart from work, I am a big fan of Bruce Lee, Tiger Shroff and Jackie Chan.
+            </p>
+        </div>
+        <div class="about-lines">
+            <p>
+                I love Martial Arts and if I get a chance I would go to Shaolin and learn Martial Arts. I watch sci-fi movies and I am also interested in horses and would
+            </p>
+        </div>
+        <div class="about-lines">
+            <p>
+                love to have a stable of my own one day too.
+
             </p>
         </div>
 

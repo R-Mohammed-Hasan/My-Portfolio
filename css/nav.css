@@ -16,6 +16,7 @@ body {
 nav {
     display: flex;
     height: 100px;
+    width: 100%;
     align-items: center;
     background-color: rgba(189, 189, 189, 0.863);
     box-sizing: border-box;
@@ -48,12 +49,12 @@ nav .know-status {
     padding: 5px;
     transition: all 0.3s ease-in-out;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 
 
-/* 
+/*
 .nav-bar.nav {
     z-index: 50;
 } */
@@ -71,7 +72,7 @@ nav .container {
 }
 
 nav .user-img {
-    width: 20%;
+    width: 15%;
     height: 100%;
     text-align: center;
 }
@@ -184,4 +185,101 @@ nav .nav-item a {
 
 .my-info .info-head~.info-detail {
     text-indent: 16%;
+}
+
+.navbar-collapse {
+    visibility: hidden;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar-nav {
+    display: none;
+}
+
+@media screen and (max-width: 1040px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-collapse {
+        background-color: #aeaeae !important;
+        color: white !important;
+        height: 580px;
+        display: flex;
+        box-shadow: 0px 0px 5px white;
+        border: 1px solid black;
+        row-gap: 7%;
+        flex-direction: column;
+        border-radius: 10px;
+        visibility: visible;
+    }
+    .navbar-collapse .know-status:hover {
+        background-color: transparent;
+    }
+    .navbar .container-fluid {
+        width: 300px;
+    }
+    .navbar-collapse {
+        visibility: hidden;
+    }
+    .navbar-toggler-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .navbar-nav {
+        display: block;
+    }
+    .navbar {
+        display: block;
+        width: 0;
+    }
+    .navbar-collapse .know-status {
+        padding: 0;
+    }
+    nav .nav-item:not(.navbar-collapse .nav-item, .my-photo-logo .nav-item) {
+        display: none;
+    }
+    .navbar-collapse {
+        visibility: visible;
+        padding-top: 30%;
+    }
+    .navbar-toggler {
+        margin-top: 30px;
+    }
+    .navbar-toggler-icon {
+        display: block;
+    }
+    .my-photo-logo {
+        visibility: visible;
+        width: 13%;
+        height: 100px;
+        margin-left: 22%;
+    }
+    #nav-my-img {
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        transition: 1.4s all;
+        border-radius: 50%;
+    }
+    .nav-link.dropdown-toggle {
+        height: 100%;
+    }
+    .nav-item.dropdown {
+        height: 100%;
+        z-index: 10000;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar-toggler-icon {
+        display: block;
+    }
+    .my-photo-logo {
+        width: 18%;
+    }
 }

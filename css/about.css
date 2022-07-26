@@ -63,3 +63,9 @@
         transform: translateY(0px);
     }
 }
+
+@media (max-width: 600px) {
+    body .about-me {
+        margin-top: 25%;
+    }
+}

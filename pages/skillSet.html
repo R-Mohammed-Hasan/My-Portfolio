@@ -20,46 +20,68 @@
 
 <body>
     <div class="load">
-        <img width="100%" src="./../images/loading.gif" alt="">
+        <img width="100%" height="100%" src="./../images/loading.gif" alt="">
     </div>
     <div class="bg-image">
     </div>
     <nav>
         <div class="user-img">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img id="nav-my-img" src="./../images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./../images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
-                                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
-                                    </li>
-                                </ul>
-                            </li>
 
-                        </ul>
+                        <div class="nav-item">
+                            <a href="./../pages/gallery.html" class="know-status">
+                                Gallery
+                            </a>
+                        </div>
 
+                        <div class="nav-item">
+                            <a href="./../pages/about.html" class="know-status">
+                                About Me
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./../pages/projects.html" class="know-status">
+                                See my Projects..!
+                            </a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="./../pages/skillSet.html" class="know-status">
+                                Skill set
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="container">
+        <div class="container nav-item">
             <!-- Button trigger modal -->
             <button type="button" class="know-status" data-bs-toggle="modal" data-bs-target="#exampleModal">
-             Visiting Card
-            </button>
+                Visiting Card
+               </button>
 
             <!-- Modal -->
             <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -109,22 +131,40 @@
         </div>
 
         <div class="nav-item">
-            <a href="./gallery.html" class="know-status">
+            <a href="./pages/gallery.html" class="know-status">
                 Gallery
             </a>
         </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 my-photo-logo">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img id="nav-my-img" src="./../images/hasan.jpg" title="Mohammed Hasan" width="44%" alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">See my Github</a></li>
+                    <li><a class="dropdown-item" href="https://github.com/R-Mohammed-Hasan" target="_blank">My work experience</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
         <div class="nav-item">
-            <a href="./about.html" class="know-status">
+            <a href="./pages/about.html" class="know-status">
                 About Me
             </a>
         </div>
         <div class="nav-item">
-            <a href="./projects.html" class="know-status">
+            <a href="./pages/projects.html" class="know-status">
                 See my Projects..!
             </a>
         </div>
         <div class="nav-item">
-            <a href="./skillSet.html" class="know-status">
+            <a href="./pages/skillSet.html" class="know-status">
                 Skill set
             </a>
         </div>
@@ -163,7 +203,9 @@
                 <img src="./../images/certificates/IMG_20220702_214056.jpg" alt="">
             </a>
         </div>
-        <button class="btn btn-info" colspan="2" id="view-more" style="grid-column:span 3;margin:2% 40%">View More..</button>
+
+        <button class="btn btn-info" colspan="2" id="view-more" style="grid-column:span 3;">View More..</button>
+
         <div class="certificate hide">
             <a href="https://www.hackerrank.com/certificates/IMG_20220702_213744." target="_blank">
                 <img src="./../images/certificates/IMG_20220702_214025.jpg" alt="">
@@ -316,12 +358,14 @@
         </div>
         <div class="content">
             <p>
-                <button type="button" class="know-status" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                   Show Visiting Card ?
-                   </button>
+
             </p>
             <p><a href="./projects.html"> Portfolios</a></p>
-            <p><a href="./projects.html"> Copyrights Ⓒ Mohammed Hasan All Rights reserved</a></p>
+            <p>
+                <a>
+                    Copyrights Ⓒ Mohammed Hasan All Rights reserved
+                </a>
+            </p>
 
         </div>
         <div class="content">
