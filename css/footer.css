@@ -72,6 +72,7 @@ footer {
     background-color: white;
     height: 30%;
     font-size: 14px;
+    font-family: monospace;
 }
 
 footer .content {
