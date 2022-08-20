@@ -199,6 +199,14 @@ nav .nav-item a {
     display: none;
 }
 
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("./../images/more-icon.png")
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 @media screen and (max-width: 1040px) {
     .navbar-nav {
         display: none;
@@ -206,7 +214,7 @@ nav .nav-item a {
     .navbar-collapse {
         background-color: #aeaeae !important;
         color: white !important;
-        height: 580px;
+        height: 85vh;
         display: flex;
         box-shadow: 0px 0px 5px white;
         border: 1px solid black;
@@ -219,7 +227,7 @@ nav .nav-item a {
         background-color: transparent;
     }
     .navbar .container-fluid {
-        width: 300px;
+        width: 98vw;
     }
     .navbar-collapse {
         visibility: hidden;
@@ -240,7 +248,8 @@ nav .nav-item a {
     .navbar-collapse .know-status {
         padding: 0;
     }
-    nav .nav-item:not(.navbar-collapse .nav-item, .my-photo-logo .nav-item) {
+    nav .nav-item:not(.navbar-collapse .nav-item,
+    .my-photo-logo .nav-item) {
         display: none;
     }
     .navbar-collapse {
