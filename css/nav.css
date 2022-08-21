@@ -212,7 +212,7 @@ nav .nav-item a {
         display: none;
     }
     .navbar-collapse {
-        background-color: #aeaeae !important;
+        background-color: #acacacfa !important;
         color: white !important;
         height: 85vh;
         display: flex;

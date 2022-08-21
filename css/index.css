@@ -101,7 +101,7 @@ html {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .my-motto {
         font-size: 35px;
         inset: 54% 15% auto auto;
