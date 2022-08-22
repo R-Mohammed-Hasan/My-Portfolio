@@ -12,11 +12,11 @@
     color: transparent;
     font-size: 40px;
     -webkit-text-stroke: 1px white;
+    transition: 0.5s all;
 }
 
 .about-me:hover .about {
-    background: -webkit-linear-gradient( rgb(0, 183, 255) 50%, rgb(224, 224, 224));
-    transition: 0.5s all;
+    background: linear-gradient( rgb(0, 183, 255) 50%, rgb(224, 224, 224));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
