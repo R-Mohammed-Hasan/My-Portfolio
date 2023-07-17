@@ -39,7 +39,7 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                                    <a class="dropdown-item" href="mailto:rafeek.ahmed1968@gmail.com">Contact me..?</a>
                                 </li>
                             </ul>
                         </li>
@@ -90,7 +90,7 @@
                             <div class="content">
                                 <div class="logo">
                                     <a href="https://www.freshworks.com/"><img src="./../images/freshworks-logo.png" width="90%" alt=""></a>
-                                    <p class="job-description">FWSA Student</p>
+                                    <p class="job-description">Internship Trainee</p>
                                 </div>
                                 <div class="my-info">
                                     <div class="info">
@@ -99,7 +99,7 @@
                                     </div>
                                     <div class="info">
                                         <strong class="info-head"><img src="./../images/mail-icon.png" width="7%" alt="">Mail Id</strong>
-                                        <p class="info-detail">mohammed.hasan@fwsa.freshworks.com</p>
+                                        <p class="info-detail">rafeek.ahmed1968@gmail.com</p>
                                     </div>
                                     <div class="info">
                                         <strong class="info-head"><img src="./../images/location-icon.png" width="5%" alt="">Location</strong>
@@ -142,7 +142,7 @@
                         <hr class="dropdown-divider">
                     </li>
                     <li>
-                        <a class="dropdown-item" href="mailto:mohammed.hasan@fwsa.freshworks.gmail.com">Contact me..?</a>
+                        <a class="dropdown-item" href="mailto:rafeek.ahmed1968@gmail.com">Contact me..?</a>
                     </li>
                 </ul>
             </li>
@@ -165,7 +165,7 @@
         </div>
     </nav>
     <div class="load">
-        <img width="100%" height="100%" src="./../images/loading.gif" alt="">
+        <img width="100%" height="100%" src="./../images/loading.gif" alt="Loading...">
     </div>
     <div class="bg-image">
         <img src="./../images/bg.gif" alt="" width="100%" height="100%">
@@ -213,11 +213,33 @@
 
     </div>
 
+    <div class="about-me mobile" onmouseenter="showAboutMe()">
+        <h2 class="about">About me</h2>
+        <div class="about-lines first">
+            <p>
+                I am Mohammed Hasan and I am from Chennai. After completing my 12th standard, I decided to study at Freshworks Software
+                Academy and got selected through an entrance test and interview. I have a sweet family at home too. Generally speaking, I am friendly and like to help
+                people. However, I mostly prefer to focus on my work and take responsibility wherever required. One of the main reasons I got into software development
+                is because I love to learn new technologies and because I am interested in action based games. My life goal is to design an action role playing game
+                of my own. Apart from work, I am a big fan of Bruce Lee, Tiger Shroff and Jackie Chan.
+                </p>
+                <p>
+                I love Martial Arts and if I get a chance I would go to Shaolin and learn Martial Arts. I watch sci-fi movies and I am also interested in horses
+            and would love to have a stable of my own one day too. I'm a kind of person who has lot of hands on experience on js and a great logical thinker
+
+            </p>
+        </div>
+    </div>
+
     <script>
-        setTimeout(showAboutMe, 4000);
+        if ($(window).width() > 480) {
+            setTimeout(showAboutMe, 3000);
+        }
 
         function showAboutMe() {
-            $('.about-lines p').css('animation', 'comeLetters 3.5s  forwards');
+            if ($(window).width() > 480) {
+                $('.about-lines p').css('animation', 'comeLetters 3.5s  forwards');
+            }
         }
     </script>
 </body>

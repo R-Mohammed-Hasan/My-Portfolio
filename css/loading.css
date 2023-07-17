@@ -1,21 +1,34 @@
 /* Loading Css */
 
-
-/* Loading Css */
-
 .load {
     position: fixed;
     top: 50%;
     left: 42%;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: monospace;
     z-index: 9999;
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     inset: 0 auto auto 0;
     backdrop-filter: blur(10px);
+}
+
+.load img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+.load img{
+    height: 35%;
+    width: 60%;
+}
+.load img{
+    border-radius: 50%;
+}
 }
 
 

@@ -66,17 +66,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 2%;
     padding: 2%;
     width: 100%;
     background-color: white;
     height: 30%;
-    font-size: 14px;
+    font-size: 16px;
     font-family: monospace;
 }
 
 footer .content {
     text-align: center;
+    width: 50%;
 }
 
 footer p button {
@@ -92,4 +92,11 @@ p:hover>button {
 footer .content a {
     text-decoration: none;
     color: black !important;
+}
+
+@media (max-width: 600px) {
+    footer{
+        font-size: 12px;
+        font-weight: 300;
+    }
 }

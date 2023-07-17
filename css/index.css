@@ -75,7 +75,7 @@ html {
 }
 
 .my-img:hover {
-    content: url('./../images/hasan2.jpg');
+    transform: scale(1.2);
 }
 
 .my-motto {

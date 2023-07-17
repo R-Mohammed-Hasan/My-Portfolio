@@ -48,11 +48,11 @@ h2 {
 
 .languages-container h3 {
     text-align: center;
-    margin: 2%;
+    margin: 5% 0 4% 0;
 }
 
 .languages-container p {
-    text-indent: 20%;
+    text-indent: 15%;
 }
 
 .border {
@@ -74,14 +74,14 @@ h2 {
 }
 
 @media (max-width: 700px) {
-    .all-certificates .certificate {
-        height: 200px;
+   .all-certificates{
+        grid-template-columns: repeat(1, 100%);
+        column-gap:0;
+        row-gap: 10px;
     }
-}
 
-@media (max-width: 700px) {
     .all-certificates .certificate {
-        height: 150px;
+        height: 300px;
     }
     .languages-container {
         margin-top: 16%;
@@ -93,4 +93,6 @@ h2 {
     body h2 {
         margin-top: 30%;
     }
+
+
 }
